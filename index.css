@@ -147,9 +147,9 @@ p+p{
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 520px) {
     .container{
-        width: 90%;
+        width: 100%;
         height: 100%;
     }
     
