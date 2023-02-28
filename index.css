@@ -1,0 +1,156 @@
+
+/* box-sizing */
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* Reset Margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+picture,
+figure{
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 400;
+}
+
+.flex{
+    display: flex;
+}
+
+.flow > *+*{                                                      /* same as .flow > *:not(:first-child) */
+    margin-top: var(--flow-space,1rem);
+}
+
+body{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.bg-image{
+    background-image: url(../PassengerCounterApp/bgImage.jpg);
+    height: 100vh;
+    background-size: cover;
+    filter: blur(2.6px);
+}
+
+.container{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 999;
+    max-width: 400px;
+    margin:  0 auto;
+    padding-bottom: 50px;
+    align-items: center;
+    background-color: #79a7d38d;
+}
+
+button{
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px auto;
+    border-radius: 6%;
+}
+.button-1{
+    font-size: 40px;
+    aspect-ratio: 1;
+    padding: 0 .5em;
+    border-radius: 50%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.button-2{
+    font-size: 22px;
+    padding: 0.4em 1em;
+}
+#increment-btn{
+    padding: 0 0.38em;
+    margin-right: .4em;
+    background-color: green;
+}
+#decrement-btn{
+    background-color: red;
+    margin-left: 0.4em;
+}
+#save-btn{
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    margin-right: .4em;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#reset-btn{
+    display: inline-block;
+    background-color: #4831D4;
+    color: #CCF381;
+    margin-left: 0.4em;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+p{
+    font-weight: 700;
+}
+h1{
+    margin: 20px;
+    font-size: 40px;
+    font-weight: 700;
+     color: #00008b;
+    
+}
+h2{
+    font-size: 25px;
+    color: chocolate;
+    font-weight: 500;
+}
+
+h2 + h2{
+    color: rgb(255, 106, 0);
+    font-size: 50px;
+    font-weight: 500;
+}
+
+p{
+    margin: 0 20px;
+    font-size: 20px;
+    color: #00008b;
+}
+p+p{
+    margin: 0;
+    font-size: 25px;
+    padding: 0.5rem;
+    color: #FCEDDA;
+    font-weight: 500;
+    background-color: #EE4E34;
+    width: 100%;
+}
+
+
+@media (max-width: 430px) {
+    .container{
+        width: 90%;
+        height: 100%;
+    }
+    
+}
