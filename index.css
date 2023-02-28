@@ -44,7 +44,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 .bg-image{
-    background-image: url(./bgImage.jpg);
+    background-image: url(bgImage.jpg);
     height: 100vh;
     background-size: cover;
     filter: blur(2.6px);
